@@ -72,14 +72,15 @@
     nav.desktop-nav {
       display: flex;
       gap: 32px;
+	  list-style: none;
     }
 
     nav.desktop-nav a {
       font-weight: 600;
       font-size: 1rem;
-      padding: 8px 0;
+      padding: 0px 0;
       position: relative;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease; 
     }
     nav.desktop-nav a:hover,
     nav.desktop-nav a:focus {
@@ -111,8 +112,9 @@
       transition: transform 0.3s ease;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 25px;
       z-index: 1500;
+	  list-style: none;
     }
     nav.mobile-nav.show {
       transform: translateX(0);
@@ -123,7 +125,9 @@
       font-weight: 600;
       color: white;
       border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-      padding-bottom: 8px;
+      padding: 8px 0;
+	  display: block;
+	  width: 100%
     }
     nav.mobile-nav a:focus, nav.mobile-nav a:hover {
       color: #7dd1f7;
@@ -450,3 +454,74 @@
     .blog-post a:hover {
       text-decoration: underline;
     }
+
+/* NAVBAR STYLES */
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #0e4662;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV ITEMS */
+.navbar li {
+  position: relative;     /* Required for dropdown positioning */
+  list-style: none;
+}
+
+/* NAV LINKS */
+.navbar li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1;         /* Ensure uniform spacing */
+}
+
+
+	/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hide dropdown initially */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0e4662;
+  min-width: 180px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown menu items */
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.dropdown-content li a:hover {
+  background-color: #126080;
+}
