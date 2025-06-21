@@ -275,14 +275,16 @@
       color: #275069;
       line-height: 1.5;
     }
-
+	.center-text {
+  text-align: center;
+}
     /* Testimonials Section */
     .testimonials {
       background: #e6f4ff;
       padding: 64px 16px;
       border-radius: 16px;
       max-width: 1280px;
-      margin: 0 auto 64px;
+      margin: 60px auto 64px;
     }
     .testimonials h2 {
       text-align: center;
