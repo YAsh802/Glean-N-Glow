@@ -237,6 +237,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
       gap: 32px;
+	  
     }
 
     .service-card {
@@ -249,6 +250,7 @@
       align-items: center;
       text-align: center;
       transition: box-shadow 0.3s ease;
+	  
     }
 
     .service-card:hover,
